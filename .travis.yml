@@ -11,7 +11,7 @@ install:
 script:
 - ng lint
 - ng build -c qa
-- ng test
+- ng test --watch=false
 deploy:
   provider: s3
   access_key_id: "$AWS_ACCESS_KEY_ID"
